@@ -4,26 +4,6 @@
 
 {% poll_messages messages %}
 
-{% if messages %} 
-    {% for message in messages %} 
-      
-		{% if message.tags == 'success' %}
-			<div class="alert-success">
-				<h2>Pool is saved!</h2>
-				<p>The results are below:</p>
-			</div>
-		{% elif message.tags == 'error' %}
-			<div class="alert alert-success">
-				<p>You have already voted for this question!</p>
-			</div>		
-		{% else %}
-			<p> {{ message }} </p>
-		{% endif %}
-		
-	  
-    {% endfor %} 
-{% endif %} 
-
 <ul>
 {% for choice in poll.choice_set.all %}
     <li>{{ choice.choice_text }} : {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>

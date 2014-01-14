@@ -1,5 +1,20 @@
-<ul>
-{% for arg in args %}
-    <li> {{ arg }} </li>
+{% for message in messages %}
+
+{% if messages %} 
+    {% for message in messages %} 
+		{% if message.tags == 'success' %}
+			<div class="alert alert-success">
+				<h2>Pool is saved!</h2>
+				<p>The results are below:</p>
+			</div>
+		{% elif message.tags == 'error' %}
+			<div class="alert alert-success">
+				<p>You have already voted for this question!</p>
+			</div>		
+		{% else %}
+			<p> {{ message }} </p>
+		{% endif %}
+    {% endfor %} 
+{% endif %} 
+
 {% endfor %}
-</ul>
