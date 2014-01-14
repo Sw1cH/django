@@ -1,0 +1,35 @@
+{% load poll_extra %}
+
+<h1>{{ poll.question }}</h1>
+
+{% poll_messages messages %}
+
+{% if messages %} 
+    {% for message in messages %} 
+      
+		{% if message.tags == 'success' %}
+			<div class="alert-success">
+				<h2>Pool is saved!</h2>
+				<p>The results are below:</p>
+			</div>
+		{% elif message.tags == 'error' %}
+			<div class="alert alert-success">
+				<p>You have already voted for this question!</p>
+			</div>		
+		{% else %}
+			<p> {{ message }} </p>
+		{% endif %}
+		
+	  
+    {% endfor %} 
+{% endif %} 
+
+<ul>
+{% for choice in poll.choice_set.all %}
+    <li>{{ choice.choice_text }} : {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'polls:detail' poll.id %}">Vote again?</a>
+<br>
+<a href="{% url 'polls:index' %}">To the poll index (will reset the session).</a>
