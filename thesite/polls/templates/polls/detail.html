@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <h1>{{ poll.question }}</h1>
 
 <form action="{% url 'polls:vote' poll.id %}" method="post">
@@ -6,5 +8,12 @@
     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
     <label for="choice{{ forloop.counter }}">{{ choice.choice_text }} : {{  choice.votes  }}</label><br />
 {% endfor %}
-<input type="submit" value="Vote" />
+
+{% if LANGUAGE_CODE == 'ru' %}
+	<input type="submit" value="Голосовать" />
+{% else %}
+	<input type="submit" value="Vote" />
+{% endif %}
+
+
 </form>

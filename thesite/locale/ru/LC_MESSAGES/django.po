@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-15 19:13+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: .\polls\templates\poll_render.html:8
+msgid "Poll is saved!"
+msgstr "Голосование сохранено!"
+
+#: .\polls\templates\poll_render.html:9
+msgid "The results are below:"
+msgstr "Результаты ниже:"
+
+#: .\polls\templates\poll_render.html:13
+msgid "You have already voted for this question!"
+msgstr "Вы уже голосовали!"
+
+#: .\polls\templates\polls\index.html:3
+msgid "Admin panel"
+msgstr "Панель администратора"
+
+#: .\polls\templates\polls\index.html:6
+msgid "Poll index"
+msgstr "Индекс опросов"
+
+#: .\polls\templates\polls\index.html:13
+msgid "No polls are available."
+msgstr "Нет опросов"
+
+#: .\polls\templates\polls\results.html:20
+msgid "Vote again? "
+msgstr "Голосовать еще?"
+
+#: .\polls\templates\polls\results.html:22
+msgid "To the poll index (will reset the session)."
+msgstr "Вернуться на индекс опросов(сессия будет сброшена)."
+
+#: .\templates\admin\base_site.html:4
+msgid "Django site admin"
+msgstr "Администрирование Django"
+
+#: .\templates\admin\base_site.html:7
+msgid "Eptron Admin"
+msgstr "Администратор Eptron"
+
+#: .\templates\admin\index.html:20
+#, python-format
+msgid "Models in the %(name)s application"
+msgstr ""
+
+#: .\templates\admin\index.html:21
+#, python-format
+msgid "%(name)s"
+msgstr ""
+
+#: .\templates\admin\index.html:33
+msgid "Add"
+msgstr "Добавить"
+
+#: .\templates\admin\index.html:39
+msgid "Change"
+msgstr "Изменить"
+
+#: .\templates\admin\index.html:49
+msgid "You don't have permission to edit anything."
+msgstr "У вас нет разрешения на редактироватирование."
+
+#: .\templates\admin\index.html:57
+msgid "Recent Actions"
+msgstr "Последние действия."
+
+#: .\templates\admin\index.html:58
+msgid "My Actions"
+msgstr "Мои действия"
+
+#: .\templates\admin\index.html:62
+msgid "None available"
+msgstr "Недоступно"
+
+#: .\templates\admin\index.html:76
+msgid "Unknown content"
+msgstr "Незнакомый контент"
+
+#: .\thesite\settings.py:36
+msgid "Russian"
+msgstr "Русский"
+
+#: .\thesite\settings.py:37
+msgid "English"
+msgstr "Английский"

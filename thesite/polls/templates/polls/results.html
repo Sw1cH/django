@@ -1,3 +1,4 @@
+{% load i18n %}
 {% load poll_extra %}
 
 <h1>{{ poll.question }}</h1>
@@ -10,6 +11,6 @@
 {% endfor %}
 </ul>
 
-<a href="{% url 'polls:detail' poll.id %}">Vote again?</a>
+<a href="{% url 'polls:detail' poll.id %}"> {% trans "Vote again? " %}  </a>
 <br>
-<a href="{% url 'polls:index' %}">To the poll index (will reset the session).</a>
+<a href="{% url 'polls:index' %}"> {% trans "To the poll index (will reset the session)." %} </a>
