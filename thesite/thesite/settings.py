@@ -30,9 +30,22 @@ ALLOWED_HOSTS = []
 # In a Windows environment this must be set to your system time zone.
 TIME_ZONE = 'America/Chicago'
 
+# Supported language set
+_ = lambda s: s
+LANGUAGES = (
+    ('ru', _('Russian')),
+    ('en', _('English')),
+)
+
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'ru'
+
+# Path for localized files
+LOCALE_PATHS = ( 
+	'D:/hello, world/django/thesite/locale',
+)
 
 SITE_ID = 1
 
@@ -82,7 +95,6 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-#SECRET_KEY = 'y2w)md6r=cuw#nebjg#6$vr2iu-76opy5cxzt0vz29qhpik(#0'
 SECRET_KEY = ')yxsxz=bmemu5q9shbo@h#2_k$zjm&2@*ikv%%0^#6of$qpa=%'
 
 # List of callables that know how to import templates from various sources.
@@ -152,3 +164,4 @@ LOGGING = {
         },
     }
 }
+

@@ -1,12 +1,15 @@
+{% load i18n %}
+
+<a href="{% url 'admin:index' %}">{% trans "Admin panel" %}</a>
+
 {% if latest_poll_list %}
-	<h1> Poll index </h1>
+	<h1> {% trans "Poll index" %} </h1>
     <ul>
     {% for poll in latest_poll_list %}
 		<li><a href="{% url 'polls:detail' poll.id %}">{{ poll.question }}</a></li>
     {% endfor %}
     </ul>
-	
 {% else %}
-	<p>No polls are available.</p>
+	<p> {% trans "No polls are available." %} </p>
 	
 {% endif %}

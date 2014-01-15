@@ -1,20 +1,20 @@
+{% load i18n %}
 {% for message in messages %}
 
 {% if messages %} 
-    {% for message in messages %} 
-		{% if message.tags == 'success' %}
-			<div class="alert alert-success">
-				<h2>Pool is saved!</h2>
-				<p>The results are below:</p>
-			</div>
-		{% elif message.tags == 'error' %}
-			<div class="alert alert-success">
-				<p>You have already voted for this question!</p>
-			</div>		
-		{% else %}
-			<p> {{ message }} </p>
-		{% endif %}
-    {% endfor %} 
-{% endif %} 
-
+		{% for message in messages %} 
+			{% if message.tags == 'success' %}
+				<div class="alert alert-success">
+					<h2> {% trans "Poll is saved!" %} </h2>
+					<p>  {% trans "The results are below:" %} </p>
+				</div>
+			{% elif message.tags == 'error' %}
+				<div class="alert alert-success">
+					<p> {% trans "You have already voted for this question!" %} </p>
+				</div>		
+			{% else %}
+				<p> {{ message }} </p>
+			{% endif %}
+		{% endfor %} 
+	{% endif %} 
 {% endfor %}
