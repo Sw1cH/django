@@ -1,0 +1,27 @@
+{% load i18n %}
+
+<table>
+<th colspan="2"> {% trans "Language selection" %}</th>
+<tr>
+<td>
+	<form name="setLangEnglish" action="/i18n/setlang/" method="POST">
+			{% csrf_token %}
+			<input name="next" type="hidden" value="/" />
+			<input type="hidden" name="language" value="en" />
+			<a href="#" onclick="document.setLangEnglish.submit();return false;">
+			{% trans "English" %}
+			</a>
+	</form>
+</td>
+<td>	
+	<form name="setLangRussian" action="/i18n/setlang/" method="POST">
+			{% csrf_token %}
+			<input name="next" type="hidden" value="/" />
+			<input type="hidden" name="language" value="ru" />
+			<a href="#" onclick="document.setLangRussian.submit();return false;">
+			{% trans "Russian" %}
+			</a>
+	</form>
+</td>
+</tr>
+</table>

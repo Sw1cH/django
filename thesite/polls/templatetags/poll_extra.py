@@ -8,5 +8,9 @@ register = template.Library()
 def poll_messages(messages):
 	return {'messages': messages}
 
+@register.inclusion_tag('language_selection.html')	
+def	lang_select():
+	return {}
+
 
 

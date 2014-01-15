@@ -8,15 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-15 19:13+0200\n"
+"POT-Creation-Date: 2014-01-15 23:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: .\polls\templates\language_selection.html:4
+msgid "Language selection"
+msgstr "Выбор языка"
+
+#: .\polls\templates\language_selection.html:12 .\thesite\settings.py:37
+msgid "English"
+msgstr "Английский"
+
+#: .\polls\templates\language_selection.html:22 .\thesite\settings.py:36
+msgid "Russian"
+msgstr "Русский"
 
 #: .\polls\templates\poll_render.html:8
 msgid "Poll is saved!"
@@ -30,23 +42,23 @@ msgstr "Результаты ниже:"
 msgid "You have already voted for this question!"
 msgstr "Вы уже голосовали!"
 
-#: .\polls\templates\polls\index.html:3
+#: .\polls\templates\polls\index.html:6
 msgid "Admin panel"
 msgstr "Панель администратора"
 
-#: .\polls\templates\polls\index.html:6
+#: .\polls\templates\polls\index.html:9
 msgid "Poll index"
 msgstr "Индекс опросов"
 
-#: .\polls\templates\polls\index.html:13
+#: .\polls\templates\polls\index.html:16
 msgid "No polls are available."
 msgstr "Нет опросов"
 
-#: .\polls\templates\polls\results.html:20
+#: .\polls\templates\polls\results.html:14
 msgid "Vote again? "
 msgstr "Голосовать еще?"
 
-#: .\polls\templates\polls\results.html:22
+#: .\polls\templates\polls\results.html:16
 msgid "To the poll index (will reset the session)."
 msgstr "Вернуться на индекс опросов(сессия будет сброшена)."
 
@@ -95,11 +107,3 @@ msgstr "Недоступно"
 #: .\templates\admin\index.html:76
 msgid "Unknown content"
 msgstr "Незнакомый контент"
-
-#: .\thesite\settings.py:36
-msgid "Russian"
-msgstr "Русский"
-
-#: .\thesite\settings.py:37
-msgid "English"
-msgstr "Английский"
